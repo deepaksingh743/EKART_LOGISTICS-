@@ -6,7 +6,7 @@ An end-to-end data analytics and business intelligence project built to optimize
 
 ## 📸 Dashboard Preview
 ### 1. Dashboard Overview 
-(<img width="895" height="506" alt="dashbaord 01" src="https://github.com/user-attachments/assets/402e5933-d747-4873-a054-4c1754168172" />
+<img width="895" height="506" alt="dashbaord 01" src="https://github.com/user-attachments/assets/402e5933-d747-4873-a054-4c1754168172" />
 
 ### 1. Fleet Management & Route Analytics
 <img width="892" height="501" alt="dashbaord 02" src="https://github.com/user-attachments/assets/b12a008c-74e1-40aa-a783-feb35c6d00b0" />
