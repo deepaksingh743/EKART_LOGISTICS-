@@ -1,0 +1,105 @@
+-- Q1.find the total freight revenue and average customer rating
+-- for each Origin_Hub.Sort the results in descending order of total revenue.
+
+SELECT 
+    Origin_Hub,
+    ROUND(SUM(Freight_Charge_INR), 2) AS Revenue,
+    AVG(Customer_Rating) AS Customer_Ratings
+FROM
+    ekart
+GROUP BY Origin_Hub
+ORDER BY Revenue DESC;
+
+--Q2.Write a query to calculate the total number of shipments and the On-Time Delivery Rate 
+-- percentage for each Service_Type (Standard, Express, Same-Day)
+
+SELECT 
+    Service_Type,
+    COUNT(Shipment_ID) AS Total_Shipments,
+    SUM(CASE
+        WHEN Delivery_Status = 'Delivered' THEN 1
+        ELSE 0
+    END) AS On_Time_Delivery,
+    ROUND((SUM(CASE
+                WHEN Delivery_Status = 'Delivered' THEN 1
+                ELSE 0
+            END) * 100) / COUNT(Shipment_ID),
+            2) AS On_Time_Delivery_Rate
+FROM
+    ekart
+
+--Q3.find the top 2 destination cities (Destination_City) 
+--  with the highest number of RTO (Return to Origin) shipments for each Origin_Hub.
+
+WITH RTO_Summary AS (
+    SELECT 
+        Origin_Hub,
+        Destination_City,
+        COUNT(Shipment_ID) AS RTO_Count
+    FROM 
+        ekart
+    WHERE 
+        Delivery_Status = 'RTO (Return to Origin)'
+    GROUP BY 
+        Origin_Hub, 
+        Destination_City
+),
+Ranked_Destinations AS (
+   SELECT 
+        Origin_Hub,
+        Destination_City,
+        RTO_Count,
+        RANK() OVER (PARTITION BY Origin_Hub ORDER BY RTO_Count DESC) AS rnk
+    FROM 
+        RTO_Summary
+)
+SELECT 
+    Origin_Hub,
+    Destination_City,
+    RTO_Count
+FROM 
+    Ranked_Destinations
+WHERE 
+    rnk <= 2;
+
+--Q4. Identify all shipments where the Freight_Charge_INR
+--  is greater than the average freight charge of their
+--  respective Service_Type. Display Shipment_ID, Service_Type,
+--  and Freight_Charge_INR
+
+WITH Service_Avg_Freight AS (
+   SELECT 
+        Service_Type,
+        AVG(Freight_Charge_INR) AS Avg_Freight
+    FROM 
+        ekart
+    GROUP BY 
+        Service_Type)
+SELECT 
+    e.Shipment_ID,
+    e.Service_Type,
+    e.Freight_Charge_INR
+FROM 
+    ekart e
+JOIN 
+    Service_Avg_Freight saf ON e.Service_Type = saf.Service_Type
+WHERE 
+    e.Freight_Charge_INR > saf.Avg_Freight;
+
+-- Q5. Write a query to display each Origin_Hub along with separate columns
+--  for Total Shipments, Delayed Shipments , Count Cancelled Shipments, 
+--  CountOverall Delay Percentage--
+
+select
+Origin_Hub,
+count(Shipment_ID) as Total_Shipment,
+sum(case when Delivery_Status="Delayed" then 1 else 0 end) as Delayed_Shipments_Count,
+sum(case when Delivery_Status="Cancelled" then 1 else 0 end) as Cancelled_Shipments_Count,
+round(
+(sum(case when Delivery_Status="Delayed" then 1 else 0 end)*100)/count(Shipment_ID),2)
+as Overall_Delayed_Rate
+from Ekart
+group by Origin_Hub;
+
+GROUP BY Service_Type;
+ 
