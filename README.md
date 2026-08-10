@@ -85,7 +85,8 @@ Ranked_Destinations AS (
 SELECT Origin_Hub, Destination_City, RTO_Count
 FROM Ranked_Destinations
 WHERE rnk <= 2;
-' '' '''
+```
+
 
 ## 📜 License
 __MIT License__ — feel free to fork, star, and use this project in your portfolio.
