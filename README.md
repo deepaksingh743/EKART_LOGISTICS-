@@ -1,4 +1,4 @@
-# 📦 Ekart Logistics & Supply Chain Analytics Dashboard
+# 📦 Ekart Logistics & Supply Chain Analytics
 
 An end-to-end data analytics and business intelligence project built to optimize logistics operations, track revenue growth, minimize high-cost RTO (Return to Origin) shipments, and analyze customer satisfaction for an e-commerce delivery network.
 
@@ -8,19 +8,20 @@ An end-to-end data analytics and business intelligence project built to optimize
 ### 1. Dashboard Overview 
 <img width="895" height="506" alt="dashbaord 01" src="https://github.com/user-attachments/assets/402e5933-d747-4873-a054-4c1754168172" />
 
-### 1. Fleet Management & Route Analytics
+### 2. Fleet Management & Route Analytics
 <img width="892" height="501" alt="dashbaord 02" src="https://github.com/user-attachments/assets/b12a008c-74e1-40aa-a783-feb35c6d00b0" />
 
 
-### 2. Revenue & Financial Insights
-<img width="892" height="506" alt="dashboard 3" src="https://github.com/user-attachments/assets/fe0f10a8-dc18-4cdc-b466-da814e2637e2" />
+### 3. Revenue & Financial Insights
+<img width="894" height="504" alt="dashboard 3" src="https://github.com/user-attachments/assets/8962f6a0-27a9-4bb3-82e8-9c510c4b875a" />
 
 
-### 3. Returns & RTO Management
+
+### 4. Returns & RTO Management
 <img width="890" height="501" alt="dashboard 4" src="https://github.com/user-attachments/assets/8602df25-a9b9-48fd-9dc5-7a31acc95759" />
 
 
-### 4. Customer Feedback & Quality Scorecard
+### 5. Customer Feedback & Quality Scorecard
 <img width="891" height="503" alt="dashboard 5" src="https://github.com/user-attachments/assets/1cb11b5e-173a-4207-83fa-6bb76622839b" />
 
 
