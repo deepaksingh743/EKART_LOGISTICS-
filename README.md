@@ -34,12 +34,8 @@ This repository also contains complex SQL queries answering critical business qu
 
 ---
 
-## 📂 Repository Structure
-```text
-├── dataset/
-│   └── ekart_logistics_dataset.csv
-├── power_bi_dashboard/
-│   └── ekart_logistics_dashboard.pbix
-├── sql_queries/
-│   └── advanced_logistics_queries.sql
-└── README.md
+## 📜 License
+__MIT License__ — feel free to fork, star, and use this project in your portfolio.
+
+## 👨‍💻 About the Author
+Hey, I’m __Deepak Singh__, a Data Analyst. I break down complex data topics into simple, practical content that actually helps you land a job.
