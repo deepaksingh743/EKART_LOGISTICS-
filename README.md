@@ -5,19 +5,24 @@ An end-to-end data analytics and business intelligence project built to optimize
 ---
 
 ## 📸 Dashboard Preview
-*(Aap apne Power BI pages ke screenshots yahan upload karke attach kar sakte hain)*
+### 1. Dashboard Overview 
+1[dashbaord Overview](<img width="895" height="506" alt="dashbaord 01" src="https://github.com/user-attachments/assets/402e5933-d747-4873-a054-4c1754168172" />
 
 ### 1. Fleet Management & Route Analytics
-![Fleet Dashboard](screenshots/fleet_page.png)
+![Fleet Dashboard]<img width="892" height="501" alt="dashbaord 02" src="https://github.com/user-attachments/assets/b12a008c-74e1-40aa-a783-feb35c6d00b0" />
+
 
 ### 2. Revenue & Financial Insights
-![Revenue Dashboard](screenshots/revenue_page.png)
+![Revenue Dashboard]<img width="892" height="506" alt="dashboard 3" src="https://github.com/user-attachments/assets/fe0f10a8-dc18-4cdc-b466-da814e2637e2" />
+
 
 ### 3. Returns & RTO Management
-![RTO Dashboard](screenshots/rto_page.png)
+![RTO Dashboard]<img width="890" height="501" alt="dashboard 4" src="https://github.com/user-attachments/assets/8602df25-a9b9-48fd-9dc5-7a31acc95759" />
+
 
 ### 4. Customer Feedback & Quality Scorecard
-![Customer Dashboard](screenshots/customer_page.png)
+![Customer Dashboard]<img width="891" height="503" alt="dashboard 5" src="https://github.com/user-attachments/assets/1cb11b5e-173a-4207-83fa-6bb76622839b" />
+
 
 ---
 
