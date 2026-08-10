@@ -85,3 +85,12 @@ Ranked_Destinations AS (
 SELECT Origin_Hub, Destination_City, RTO_Count
 FROM Ranked_Destinations
 WHERE rnk <= 2;
+' '' '''
+
+## 📜 License
+__MIT License__ — feel free to fork, star, and use this project in your portfolio.
+
+## 👨‍💻 About the Author
+Hey, I’m __Deepak Singh__, a Data Analyst. I break down complex data topics into simple, practical content that actually helps you land a job.
+
+### 💡 Thanks for checking out the project! Your support means a lot! Feel free to star ⭐ this repo or share it with someone learning Data Analytics. 🚀
